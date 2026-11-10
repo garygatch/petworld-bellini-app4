@@ -93,7 +93,7 @@
                 }
               },
               "name": "pw-stat-card",
-              "nodeName": null,
+              "nodeName": "pw-stat-card",
               "ownerId": "6af28afd1c608667d4d669c8",
               "ownerType": "app",
               "resourceIdentity": "components/pw-stat-card",
@@ -122,7 +122,7 @@
                 }
               },
               "name": "pw-stat-card",
-              "nodeName": null,
+              "nodeName": "pw-stat-card",
               "ownerId": "6af28afd1c608667d4d669c8",
               "ownerType": "app",
               "resourceIdentity": "components/pw-stat-card",
@@ -151,7 +151,7 @@
                 }
               },
               "name": "pw-stat-card",
-              "nodeName": null,
+              "nodeName": "pw-stat-card",
               "ownerId": "6af28afd1c608667d4d669c8",
               "ownerType": "app",
               "resourceIdentity": "components/pw-stat-card",
@@ -495,7 +495,7 @@
             }
           },
           "name": "pw-feedback",
-          "nodeName": null,
+          "nodeName": "pw-feedback",
           "ownerId": "6af28afd1c608667d4d669c8",
           "ownerType": "app",
           "resourceIdentity": "components/pw-feedback",
@@ -533,7 +533,7 @@
             }
           },
           "name": "pw-feedback",
-          "nodeName": null,
+          "nodeName": "pw-feedback",
           "ownerId": "6af28afd1c608667d4d669c8",
           "ownerType": "app",
           "resourceIdentity": "components/pw-feedback",
@@ -833,7 +833,7 @@
                     }
                   },
                   "name": "pw-country-card",
-                  "nodeName": null,
+                  "nodeName": "pw-country-card",
                   "ownerId": "6af28afd1c608667d4d669c8",
                   "ownerType": "app",
                   "resourceIdentity": "components/pw-country-card",
@@ -897,7 +897,7 @@
                     }
                   },
                   "name": "pw-feedback",
-                  "nodeName": null,
+                  "nodeName": "pw-feedback",
                   "ownerId": "6af28afd1c608667d4d669c8",
                   "ownerType": "app",
                   "resourceIdentity": "components/pw-feedback",
@@ -1076,6 +1076,21 @@
         }
       },
       "name": "div"
+    },
+    {
+      "attributes": [
+        {
+          "property": "core",
+          "value": ""
+        }
+      ],
+      "children": [],
+      "classList": [],
+      "expressions": [],
+      "name": "Badge",
+      "nodeName": "bln-badge",
+      "ownerName": null,
+      "type": "core-component"
     }
   ],
   "description": "## Countries directory\n- **Routing:** `workspace.countries` at `/app/countries`, inside the persistent workspace shell; no URL parameters.\n- **Service cache:** `countryData` owns Countries GraphQL transport, a ten-minute cache and shared pending requests. Refresh/Retry forces a load; failures retain cached results. Successful loads explicitly call `syncData` for metrics, continent options and filtering.\n- **Filters:** verified core `onValueChange` callbacks assign search (250 ms core debounce), continent and name sort before applying local filters and resetting page one; no filter watcher is required. Shared records are never mutated.\n- **Pagination:** twelve results per page, clamped after refresh, with an accessible result range.\n- **Inline details and focus:** `pw-country-card` emits the named `country` local, passed directly to `selectCountry(country)`. Opening details focuses their heading; closing restores the initiating button or falls back to the results heading. No dialog or route change.",
